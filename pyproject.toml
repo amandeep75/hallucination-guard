@@ -1,0 +1,24 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "hallucination-guard"
+version = "0.1.0"
+description = "SelfCheckGPT-inspired hallucination detection decorator for LLM apps"
+authors = ["Amandeep Tiwary <amandeeptiwary01@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "hallucination_guard" }
+]
+homepage = "https://github.com/yourusername/hallucination-guard"
+repository = "https://github.com/yourusername/hallucination-guard"
+keywords = ["llm", "ai", "hallucination", "consistency", "guard"]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+scikit-learn = ">=1.0.0"
+
+[tool.poetry.extras]
+ollama = ["ollama"]
